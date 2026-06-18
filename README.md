@@ -19,7 +19,7 @@ Las tiendas de artículos de natación suelen llevar el control de ventas e inve
 * Tomar decisiones oportunas de reposición.
 * Analizar ingresos y rentabilidad.
 
-![Arbol de Problemas] (Doc/Arbol de Problemas.drawio.png)
+![Árbol de Problemas](Doc/Arbol%20de%20Problemas.drawio.png)
 
 Objetivo SMART
 
