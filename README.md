@@ -19,6 +19,8 @@ Las tiendas de artículos de natación suelen llevar el control de ventas e inve
 * Tomar decisiones oportunas de reposición.
 * Analizar ingresos y rentabilidad.
 
+![Arbol de Problemas] (Doc/Arbol de Problemas.drawio.png)
+
 Objetivo SMART
 
 Desarrollar un sistema web DSS para la gestión de ventas e inventario de materiales de natación que permita registrar productos, clientes y ventas, generando indicadores de productos más vendidos, ingresos y niveles de stock para mejorar la toma de decisiones comerciales.
