@@ -18,7 +18,8 @@ Objetivo SMART
 Desarrollar un sistema web DSS para la gestión de ventas e inventario de materiales de natación que permita registrar productos, clientes y ventas, generando indicadores de productos más vendidos, ingresos y niveles de stock para mejorar la toma de decisiones comerciales.
 
 Arbol de Soluciones:
-![Árbol de Problemas](Doc/Árbol%20de%20Soluciones.drawio.png)
+
+![Árbol de Soluciones](Doc/Árbol%20de%20Soliciones.drawio.png)
 
 Canva MVP
 
@@ -47,9 +48,11 @@ Diagrama de Clases:
 Diagrama de Secuencia:
 
 Secuencia de Clientes
+
 ![Diagrama de Secuencia cliente](Doc/Secuencia%20de%20Cliente.png)
 
 Secuencia de Administrador
+
 ![Diagrama de Secuencia Administrador](Doc/Secuencia%20de%20administrador.png)
 
 Esquema Entidad Relacion:
