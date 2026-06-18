@@ -56,4 +56,5 @@ Secuencia de Administrador
 ![Diagrama de Secuencia Administrador](Doc/Secuencia%20de%20administrador.png)
 
 Esquema Entidad Relacion:
-![Diagrama de Secuencia cliente](Doc/Esquema%20Modelo%20Realcional.drawio.png)
+
+![Diagrama de Secuencia cliente](Doc/Esquema%20Modelo%20Realcional.drawio%20.png)
