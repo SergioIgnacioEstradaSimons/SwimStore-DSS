@@ -55,18 +55,21 @@ Generar indicadores para la toma de decisiones.
 
 ## Historias de Usuario
 
-| ID    | Historia de Usuario                                                                                                              | Prioridad | Épica                            | Estado  |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------- | ------- |
-| HU-01 | Como administrador, quiero gestionar categorías de productos para organizar correctamente el catálogo de materiales de natación. | Alta      | EP-01 Gestión de Inventario      | Ready   |
-| HU-02 | Como administrador, quiero gestionar productos para mantener actualizado el inventario y los precios de venta.                   | Alta      | EP-01 Gestión de Inventario      | Ready   |
-| HU-03 | Como administrador, quiero registrar clientes para mantener un historial de compradores.                                         | Alta      | EP-02 Gestión Comercial          | Ready   |
-| HU-04 | Como vendedor, quiero registrar ventas para controlar ingresos y actualizar automáticamente el stock.                            | Alta      | EP-02 Gestión Comercial          | Ready   |
-| HU-05 | Como administrador, quiero consultar el historial de ventas para realizar seguimiento de las transacciones realizadas.           | Media     | EP-02 Gestión Comercial          | Backlog |
-| HU-06 | Como administrador, quiero visualizar los productos más vendidos para identificar cuáles generan mayores ingresos.               | Alta      | EP-03 Dashboard DSS              | Ready   |
-| HU-07 | Como administrador, quiero visualizar productos con stock bajo para tomar decisiones oportunas de reposición.                    | Alta      | EP-03 Dashboard DSS              | Ready   |
-| HU-08 | Como administrador, quiero analizar las ventas por categoría para identificar qué línea de productos es más rentable.            | Media     | EP-03 Dashboard DSS              | Backlog |
-| HU-09 | Como administrador, quiero visualizar los ingresos mensuales para evaluar el desempeño financiero del negocio.                   | Media     | EP-03 Dashboard DSS              | Backlog |
-| HU-10 | Como administrador principal, quiero gestionar usuarios y roles para controlar el acceso al sistema.                             | Baja      | EP-04 Seguridad y Administración | Backlog |
+| ID    | Historia de Usuario                                                                                                                                 | Prioridad | Épica                            | Estado  |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------- | ------- |
+| HU-01 | Como administrador, quiero registrar, editar y eliminar categorías de productos para organizar correctamente el catálogo de materiales de natación. | Alta      | EP-01 Gestión de Inventario      | Ready   |
+| HU-02 | Como administrador, quiero registrar, editar y eliminar productos para mantener actualizado el inventario.                                          | Alta      | EP-01 Gestión de Inventario      | Ready   |
+| HU-03 | Como administrador, quiero registrar clientes para mantener información de compradores frecuentes.                                                  | Alta      | EP-02 Gestión Comercial          | Ready   |
+| HU-04 | Como vendedor, quiero registrar una venta para controlar los ingresos y actualizar automáticamente el inventario.                                   | Alta      | EP-02 Gestión Comercial          | Ready   |
+| HU-05 | Como administrador, quiero visualizar el historial de ventas para realizar seguimiento de las transacciones realizadas.                             | Media     | EP-02 Gestión Comercial          | Backlog |
+| HU-06 | Como administrador, quiero visualizar los productos más vendidos para identificar cuáles generan mayores ingresos.                                  | Alta      | EP-03 Dashboard DSS              | Ready   |
+| HU-07 | Como administrador, quiero visualizar productos con stock bajo para tomar decisiones de reposición de inventario.                                   | Alta      | EP-03 Dashboard DSS              | Ready   |
+| HU-08 | Como administrador, quiero analizar las ventas por categoría para identificar qué línea de productos es más rentable.                               | Media     | EP-03 Dashboard DSS              | Backlog |
+| HU-09 | Como administrador, quiero visualizar los ingresos mensuales para evaluar el desempeño financiero del negocio.                                      | Media     | EP-03 Dashboard DSS              | Backlog |
+| HU-10 | Como administrador principal, quiero administrar usuarios y roles para controlar el acceso al sistema.                                              | Baja      | EP-04 Seguridad y Administración | Backlog |
+
+</table>
+
 
 ### MVP (Sprint 1)
 
