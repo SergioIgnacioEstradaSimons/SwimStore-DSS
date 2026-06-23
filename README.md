@@ -95,6 +95,20 @@ Una historia está lista cuando:
 - No posee dependencias pendientes.
 - Fue aprobada por el Product Owner.
 
+## Definition of Done (DoD)
+
+Una Historia de Usuario se considera terminada cuando cumple con todos los siguientes criterios:
+
+* El código compila y ejecuta sin errores.
+* Se respetan los estándares de nomenclatura definidos por el equipo.
+* La funcionalidad cumple los criterios de aceptación establecidos.
+* Se realizaron pruebas funcionales satisfactorias.
+* La integración con la base de datos funciona correctamente.
+* La documentación UML se encuentra actualizada.
+* El código fue revisado antes de ser integrado a la rama develop.
+* La historia fue movida a la columna Done en GitHub Projects.
+* El Product Owner valida que la funcionalidad cumple el objetivo de negocio.
+* No existen errores críticos pendientes relacionados con la funcionalidad implementada.
 
 # Estructura del Proyecto
 
