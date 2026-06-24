@@ -1,58 +1,149 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏊 SwimStore DSS
+Sistema Inteligente de Venta de Materiales de Natación
+Integrantes del Squad
+Sergio Ignacio Estrada Simons
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción del Proyecto
+SwimStore DSS es una plataforma web orientada a la venta de materiales de natación que incorpora funcionalidades de apoyo a la toma de decisiones (DSS).
+El sistema permite administrar productos, categorías, clientes y ventas, además de generar indicadores estratégicos mediante un dashboard analítico para optimizar el control de inventario y mejorar la rentabilidad del negocio.
 
-## About Laravel
+## Problema Identificado
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Las tiendas de artículos de natación suelen llevar el control de ventas e inventario de manera manual, dificultando:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Árbol de Problemas](Doc/Arbol%20de%20Problemas.drawio.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Objetivo SMART
 
-## Learning Laravel
+Desarrollar un sistema web DSS para la gestión de ventas e inventario de materiales de natación que permita registrar productos, clientes y ventas, generando indicadores de productos más vendidos, ingresos y niveles de stock para mejorar la toma de decisiones comerciales.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Arbol de Soluciones:
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![Árbol de Soluciones](Doc/Árbol%20de%20Soliciones.drawio.png)
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Canva MVP
 
-## Agentic Development
+![Canva MVP](Doc/Canvas%20MVP.png)
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### Propuesta de Valor
 
-```bash
-composer require laravel/boost --dev
+SwimStore DSS permite gestionar la venta de materiales de natación y proporciona indicadores estratégicos sobre inventario, productos más vendidos y rentabilidad, facilitando la toma de decisiones comerciales.
+Definicion del MVP
 
-php artisan boost:install
-```
+Es / No es
+Es	No es
+Sistema de ventas	Marketplace completo
+DSS Comercial	ERP Empresarial
+Control de inventario	Sistema de contabilidad
+Hace / No Hace
+Hace	No Hace
+Registro de productos	Facturación electrónica
+Registrar ventas	Gestión bancaria
+Mostrar dashboard	Control avanzado de proveedores
+Generar reportes	Aplicación móvil
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Épicas
 
-## Contributing
+### EP-01 Gestión de Inventario
+Administrar categorías y productos.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### EP-02 Gestión Comercial
+Administrar clientes y ventas.
 
-## Code of Conduct
+### EP-03 Dashboard DSS
+Generar indicadores para la toma de decisiones.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Historias de Usuario
 
-## Security Vulnerabilities
+| ID    | Historia de Usuario                                                                                                                                 | Prioridad | Épica                            |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------- |
+| HU-01 | Como administrador, quiero registrar, editar y eliminar categorías de productos para organizar correctamente el catálogo de materiales de natación. | Alta      | EP-01 Gestión de Inventario      |
+| HU-02 | Como administrador, quiero registrar, editar y eliminar productos para mantener actualizado el inventario.                                          | Alta      | EP-01 Gestión de Inventario      |
+| HU-03 | Como administrador, quiero registrar clientes para mantener información de compradores frecuentes.                                                  | Alta      | EP-02 Gestión Comercial          |
+| HU-04 | Como vendedor, quiero registrar una venta para controlar los ingresos y actualizar automáticamente el inventario.                                   | Alta      | EP-02 Gestión Comercial          |
+| HU-05 | Como administrador, quiero visualizar el historial de ventas para realizar seguimiento de las transacciones realizadas.                             | Media     | EP-02 Gestión Comercial          |
+| HU-06 | Como administrador, quiero visualizar los productos más vendidos para identificar cuáles generan mayores ingresos.                                  | Alta      | EP-03 Dashboard DSS              |
+| HU-07 | Como administrador, quiero visualizar productos con stock bajo para tomar decisiones de reposición de inventario.                                   | Alta      | EP-03 Dashboard DSS              | 
+| HU-08 | Como administrador, quiero analizar las ventas por categoría para identificar qué línea de productos es más rentable.                               | Media     | EP-03 Dashboard DSS              |
+| HU-09 | Como administrador, quiero visualizar los ingresos mensuales para evaluar el desempeño financiero del negocio.                                      | Media     | EP-03 Dashboard DSS              |
+| HU-10 | Como administrador principal, quiero administrar usuarios y roles para controlar el acceso al sistema.                                              | Baja      | EP-04 Seguridad y Administración |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### MVP (Sprint 1)
+
+Las siguientes historias forman parte del MVP inicial:
+
+*  HU-01 Gestionar Categorías
+*  HU-02 Gestionar Productos
+*  HU-03 Registrar Clientes
+*  HU-04 Registrar Ventas
+*  HU-06 Productos Más Vendidos
+*  HU-07 Productos con Stock Bajo
+
+Estas historias permiten disponer de un sistema funcional de ventas con capacidades de análisis para la toma de decisiones (DSS).
+
+## Definition of Ready
+
+Una historia está lista cuando:
+
+- Tiene descripción clara.
+- Tiene criterios de aceptación.
+- Está priorizada.
+- Tiene relación con UML.
+- Tiene relación con la base de datos.
+- No posee dependencias pendientes.
+- Fue aprobada por el Product Owner.
+
+## Definition of Done (DoD)
+
+Una Historia de Usuario se considera terminada cuando cumple con todos los siguientes criterios:
+
+* El código compila y ejecuta sin errores.
+* Se respetan los estándares de nomenclatura definidos por el equipo.
+* La funcionalidad cumple los criterios de aceptación establecidos.
+* Se realizaron pruebas funcionales satisfactorias.
+* La integración con la base de datos funciona correctamente.
+* La documentación UML se encuentra actualizada.
+* El código fue revisado antes de ser integrado a la rama develop.
+* La historia fue movida a la columna Done en GitHub Projects.
+* El Product Owner valida que la funcionalidad cumple el objetivo de negocio.
+* No existen errores críticos pendientes relacionados con la funcionalidad implementada.
+
+## Tecnologías Utilizadas
+### Backend
+* Laravel 11
+* PHP 8.3
+### Frontend
+* Blade
+* Bootstrap 5
+* JavaScript
+### Base de Datos
+* MySQL
+### Control de Versiones
+* Git
+* GitHub
+### Gestión Ágil
+* Scrum
+* GitHub Projects
+
+# Estructura del Proyecto
+
+### Diagrama de Clases:
+
+![Diagrama de Clases](Doc/Diagrama%20de%20Clases.drawio.png)
+
+### Diagrama de Secuencia:
+
+#### Secuencia de Clientes
+
+![Diagrama de Secuencia cliente](Doc/Secuencia%20de%20Cliente.png)
+
+#### Secuencia de Administrador
+
+![Diagrama de Secuencia Administrador](Doc/Secuencia%20de%20administrador.png)
+
+## Esquema Entidad Relacion:
+
+![Diagrama de Secuencia cliente](Doc/Esquema%20Modelo%20Realcional.drawio%20.png)
+
