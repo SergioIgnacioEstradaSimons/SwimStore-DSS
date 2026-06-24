@@ -110,6 +110,23 @@ Una Historia de Usuario se considera terminada cuando cumple con todos los sigui
 * El Product Owner valida que la funcionalidad cumple el objetivo de negocio.
 * No existen errores críticos pendientes relacionados con la funcionalidad implementada.
 
+## Tecnologías Utilizadas
+### Backend
+* Laravel 11
+* PHP 8.3
+### Frontend
+* Blade
+* Bootstrap 5
+* JavaScript
+### Base de Datos
+* MySQL
+### Control de Versiones
+* Git
+* GitHub
+### Gestión Ágil
+* Scrum
+* GitHub Projects
+
 # Estructura del Proyecto
 
 ### Diagrama de Clases:
