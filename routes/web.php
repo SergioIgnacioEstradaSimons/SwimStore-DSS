@@ -1,12 +1,10 @@
 <?php
 
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\UserController;
-use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/categories');
 
 Route::middleware([
     'auth:sanctum',
@@ -18,5 +16,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
 Route::resource('users', UserController::class);
+Route::resource('categories', CategoriesController::class);
