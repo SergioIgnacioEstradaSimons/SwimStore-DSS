@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -43,14 +44,18 @@ class UserController extends Controller
             'apellido' => $request->apellido,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'roles_id' => 2,
             'fecha' => now(),
-            'estado' => true,
+            'estado' => 1,
         ]);
 
-        return response()->json([
-            'message' => 'Usuario registrado correctamente',
-            'data' => $user
-        ], 201);
+        // 🔥 FORZAR LOGIN CORRECTO
+        Auth::login($user);   // 👈 ESTE ES EL IMPORTANTE
+
+        // 🔥 regenerar sesión (MUY IMPORTANTE)
+        $request->session()->regenerate();
+
+        return redirect()->route('cliente.inicio');
     }
 
     /**

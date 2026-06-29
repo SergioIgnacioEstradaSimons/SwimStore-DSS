@@ -47,7 +47,7 @@ class AuthController extends Controller
 
                 //<<<<<<<<<<<<<<<<<
                 //PON AQUÍ LA RUTA DEL CLIENTE
-                return redirect('/AQUI_RUTA_CLIENTE');
+                return redirect()->route('cliente.inicio');
                 //>>>>>>>>>>>>>>>>>
 
             }

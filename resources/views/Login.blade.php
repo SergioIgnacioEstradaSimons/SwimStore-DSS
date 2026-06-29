@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container mt-5">
 
-    <div class="row justify-content-center">
+        <div class="row justify-content-center">
 
-        <div class="col-md-4">
+            <div class="col-md-4">
 
-            <div class="card">
+                <div class="card">
 
-                <div class="card-header">
+                    <div class="card-header">
 
-                    <h3>Iniciar Sesión</h3>
+                        <h3>Iniciar Sesión</h3>
 
-                </div>
+                    </div>
 
-                <div class="card-body">
+                    <div class="card-body">
 
-                    <form action="{{ route('login.store') }}" method="POST">
+                        <form action="{{ route('login.store') }}" method="POST">
 
-                        @csrf
+                            @csrf
 
-                        <div class="mb-3">
+                            <div class="mb-3">
 
-                            <label>Correo</label>
+                                <label>Correo</label>
 
-                            <input
-                                type="email"
-                                name="email"
-                                class="form-control"
-                                required>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    required>
 
-                        </div>
+                            </div>
 
-                        <div class="mb-3">
+                            <div class="mb-3">
 
-                            <label>Contraseña</label>
+                                <label>Contraseña</label>
 
-                            <input
-                                type="password"
-                                name="password"
-                                class="form-control"
-                                required>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    class="form-control"
+                                    required>
 
-                        </div>
+                            </div>
 
-                        @error('email')
+                            @error('email')
 
                             <div class="alert alert-danger">
 
@@ -59,15 +61,22 @@
 
                             </div>
 
-                        @enderror
+                            @enderror
 
-                        <button class="btn btn-primary w-100">
+                            <button class="btn btn-primary w-100">
 
-                            Iniciar Sesión
+                                Iniciar Sesión
 
-                        </button>
+                            </button>
 
-                    </form>
+                            <a href="{{ route('cliente.register.form') }}" class="btn btn-outline-secondary w-100 mt-2">
+                                Registrarse
+                            </a>
+
+
+                        </form>
+
+                    </div>
 
                 </div>
 
@@ -77,7 +86,6 @@
 
     </div>
 
-</div>
-
 </body>
+
 </html>
