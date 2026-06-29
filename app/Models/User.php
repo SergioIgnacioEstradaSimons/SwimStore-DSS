@@ -16,19 +16,23 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     protected $fillable = [
-        'role_id',
+        'roles_id',
         'nombre',
         'apellido',
-        'correo',
+        'email',
         'password',
         'fecha',
         'estado',
     ];
-    public function customers() : HasMany
+    public function rol(): BelongsTo
+    {
+        return $this->belongsTo(Roles::class);
+    }
+    public function customers(): HasMany
     {
         return $this->hasMany(Customers::class);
     }
-    public function administrators() : HasMany
+    public function administrators(): HasMany
     {
         return $this->hasMany(Administrators::class);
     }
