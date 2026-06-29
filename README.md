@@ -60,7 +60,7 @@ Generar indicadores para la toma de decisiones.
 | HU-01 | Como administrador, quiero registrar, editar y eliminar categorías de productos para organizar correctamente el catálogo de materiales de natación. | Alta      | EP-01 Gestión de Inventario      |
 | HU-02 | Como administrador, quiero registrar, editar y eliminar productos para mantener actualizado el inventario.                                          | Alta      | EP-01 Gestión de Inventario      |
 | HU-03 | Como administrador, quiero registrar clientes para mantener información de compradores frecuentes.                                                  | Alta      | EP-02 Gestión Comercial          |
-| HU-04 | Como vendedor, quiero registrar una venta para controlar los ingresos y actualizar automáticamente el inventario.                                   | Alta      | EP-02 Gestión Comercial          |
+| HU-04 | Como Cliente Quiero registrar en la pagina Para poder realizar comprar de la mercancía disponible                                                   | Alta      | EP-02 Seguridad y Administacion  |
 | HU-05 | Como administrador, quiero visualizar el historial de ventas para realizar seguimiento de las transacciones realizadas.                             | Media     | EP-02 Gestión Comercial          |
 | HU-06 | Como administrador, quiero visualizar los productos más vendidos para identificar cuáles generan mayores ingresos.                                  | Alta      | EP-03 Dashboard DSS              |
 | HU-07 | Como administrador, quiero visualizar productos con stock bajo para tomar decisiones de reposición de inventario.                                   | Alta      | EP-03 Dashboard DSS              | 
