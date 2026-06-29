@@ -9,15 +9,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Products extends Model
 {
     protected $fillable = [
+        'categories_id',
         'nombre',
         'descripcion',
         'precio',
         'stock',
         'estado',
     ];
-    public function categorie() : BelongsTo
+    public function category() : BelongsTo
     {
-        return $this->belongsTo(Categories::class);
+        return $this->belongsTo(Categories::class, 'categories_id');
     }
     public function sales_details() : HasMany
     {

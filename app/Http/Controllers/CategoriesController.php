@@ -14,7 +14,7 @@ class CategoriesController extends Controller
     {
         $categories = Categories::all();
 
-        return view('categories', compact('categories'));
+        return view('administrador.categorias.index', compact('categories'));
     }
 
     /**
@@ -47,7 +47,7 @@ class CategoriesController extends Controller
             'nombre' => $nombre
         ]);
 
-        return redirect()->route('categories.index')
+        return redirect()->route('administrador.categorias.index')
             ->with('success', 'Categoría registrada correctamente');
     }
 
@@ -89,18 +89,27 @@ class CategoriesController extends Controller
             'nombre' => $nombre
         ]);
 
-        return redirect()->route('categories.index')
-            ->with('success', 'Categoría actualizada correctamente');
+        return redirect()->route('administrador.categorias.index')
+            ->with('success', 'Categoría modificada correctamente');
     }
 
     /**
      * Eliminar una categoría.
      */
-    public function destroy(Categories $category)
+    public function destroy($id)
     {
+        $category = Categories::findOrFail($id);
+
+        if ($category->products()->exists()) {
+            return redirect()
+                ->route('administrador.categorias.index')
+                ->with('error', 'No se puede eliminar la categoría porque tiene productos.');
+        }
+
         $category->delete();
 
-        return redirect()->route('categories.index')
+        return redirect()
+            ->route('administrador.categorias.index')
             ->with('success', 'Categoría eliminada correctamente');
     }
 }

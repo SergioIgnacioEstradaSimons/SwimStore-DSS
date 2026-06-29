@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Categories extends Model
+class Roles extends Model
 {
     protected $fillable = [
         'nombre',
-        'estado',
     ];
-    public function products() : HasMany
+    public function users() : HasMany
     {
-        return $this->hasMany(Products::class, 'categories_id');
+        return $this->hasMany(User::class);
     }
 }

@@ -34,14 +34,14 @@ class UserController extends Controller
         $request->validate([
             'nombre' => 'required|string|max:255',
             'apellido' => 'required|string|max:255',
-            'correo' => 'required|email|unique:users,correo',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);
 
         $user = User::create([
             'nombre' => $request->nombre,
             'apellido' => $request->apellido,
-            'correo' => $request->correo,
+            'email' => $request->email,
             'password' => Hash::make($request->password),
             'fecha' => now(),
             'estado' => true,
@@ -80,13 +80,13 @@ class UserController extends Controller
         $request->validate([
             'nombre' => 'sometimes|string|max:255',
             'apellido' => 'sometimes|string|max:255',
-            'correo' => 'sometimes|email|unique:users,correo,' . $user->id,
+            'email' => 'sometimes|email|unique:users,email,' . $user->id,
         ]);
 
         $user->update($request->only([
             'nombre',
             'apellido',
-            'correo',
+            'email',
             'estado'
         ]));
 
